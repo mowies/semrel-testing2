@@ -1,9 +1,3 @@
-branches:
-  - name: 'main'
-    prerelease: true
-  - '+([0-9])?(.+([0-9])).x'
-  - name: next
-    channel: next
 ci: true
 debug: true
 dryRun: false
