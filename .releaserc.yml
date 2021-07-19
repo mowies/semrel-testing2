@@ -2,6 +2,9 @@ branches:
   - name: 'main'
     prerelease: true
     channel: 'dev'
+  - name: 'master'
+    prerelease: true
+    channel: 'dev'
   - '+([0-9])?(.+([0-9])).x'
 ci: true
 debug: true
