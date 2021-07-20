@@ -11,7 +11,7 @@
     },
     {
       "type": "chore",
-      "section": "Other"
+      "hidden": true
     },
     {
       "type": "docs",
