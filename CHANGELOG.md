@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.11.1](https://github.com/mowies/semrel-testing2/compare/v0.11.0...v0.11.1) (2021-07-21)
+
+
+### Features
+
+* remove test file again ([#11](https://github.com/mowies/semrel-testing/issues/11)) ([fab2cfd](https://github.com/mowies/semrel-testing2/commit/fab2cfd58970aa130aad99c9dbb5ea551b8a85b9))
+
+
+### Bug Fixes
+
+* use correct issue url format ([ef986ba](https://github.com/mowies/semrel-testing2/commit/ef986ba2be65d50a7aa14d58868a7267ad832bf0))
+
 ## [0.11.0](https://github.com/mowies/semrel-testing2/compare/v0.10.5...v0.11.0) (2021-07-21)
 
 
