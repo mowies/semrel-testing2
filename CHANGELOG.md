@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.10.2](https://github.com/mowies/semrel-testing2/compare/v0.10.1...v0.10.2) (2021-07-21)
+
+
+### Bug Fixes
+
+* fix attaching of release notes to GH releases ([5e347b3](https://github.com/mowies/semrel-testing2/commit/5e347b39082b2d47ada7af273047c1d9d424da49))
+
 ### [0.10.1](https://github.com/mowies/semrel-testing2/compare/v0.10.0...v0.10.1) (2021-07-21)
 
 
