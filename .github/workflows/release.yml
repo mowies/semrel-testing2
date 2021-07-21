@@ -35,15 +35,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo ":rocket: Creating release package now..."
+          echo "🚀 Creating release package now..."
           npx standard-version@^9.3.1
 
           echo "::set-output name=tag-name::$(git describe --tags --abbrev=0)"
-          echo ":zap: Pushing changes to remote repository..."
+          echo "⚡️ Pushing changes to remote repository..."
           git push --follow-tags
 
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cat "${{ env.RELEASE_NOTES_FILE }}"
           gh release create "${{ steps.create-release-package.outputs.tag-name }}" --notes-file "${{ env.RELEASE_NOTES_FILE }}"
