@@ -29,6 +29,7 @@ jobs:
       - name: Prepare GitHub Release Notes
         run: |
           npx standard-version@^9.3.1 -i "${{ env.RELEASE_NOTES_FILE }}" --skip.commit --skip.tag --skip.bump --header ""
+          cat "${{ env.RELEASE_NOTES_FILE }}"
 
       - name: Create release package
         id: create-release-package
