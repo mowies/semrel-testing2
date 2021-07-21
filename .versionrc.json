@@ -1,6 +1,6 @@
 {
   "preMajor": true,
-  "issueUrlFormat": "github.com/mowies/semrel-testing/issues/{{id}}",
+  "issueUrlFormat": "https://github.com/mowies/semrel-testing/issues/{{id}}",
   "types": [
     {
       "type": "feat",
