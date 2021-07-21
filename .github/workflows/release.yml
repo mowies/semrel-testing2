@@ -18,11 +18,28 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Release to GitHub
+      - name: Configure Git
+        run: |
+          git config user.name "Moritz Wiesinger"
+          git config user.email "moritz.wiesinger@dynatrace.com"
+
+      - name: Prepare GitHub Release Notes
+        run: |
+          npx standard-version -i RELEASE-BODY.md --skip.commit --skip.tag --skip.bump --header ""
+
+      - name: Create release package
+        id: create-release-package
         env:
-          GITHUB_TOKEN: ${{ secrets.ADVANCED_GITHUB_TOKEN }}
-          GIT_AUTHOR_NAME: "Moritz Wiesinger"
-          GIT_AUTHOR_EMAIL: moritz.wiesinger@dynatrace.com
-          GIT_COMMITTER_NAME: "Moritz Wiesinger"
-          GIT_COMMITTER_EMAIL: moritz.wiesinger@dynatrace.com
-        run: npx standard-release
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx standard-version
+          echo ::set-output name=tag-name::$(git describe --tags --abbrev=0)
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          release_name: ${{ steps.create-release-package.tag-name }}
+          tag_name: ${{ steps.create-release-package.tag-name }}
+          body_path: RELEASE-BODY.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
