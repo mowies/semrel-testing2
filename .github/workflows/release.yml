@@ -11,13 +11,13 @@ jobs:
   release:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: ${{ env.NODE_VERSION }}
+
+      - name: Checkout repo
+        uses: actions/checkout@v2
 
       - name: Configure Git
         run: |
@@ -35,19 +35,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo :rocket: Creating release package now...
+          echo ":rocket: Creating release package now..."
           npx standard-version@^9.3.1
 
-          echo "Setting tag now..."
-          echo "::set-output name=tag_name::$(git describe --tags --abbrev=0)"
-
-          echo "Pushing changes to remote repository..."
+          echo "::set-output name=tag-name::$(git describe --tags --abbrev=0)"
+          echo ":zap: Pushing changes to remote repository..."
           git push --follow-tags
 
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TAG: ${{ steps.create-release-package.tag_name }}
           RELEASE_NOTES_FILE: ${{ env.RELEASE_NOTES_FILE }}
         run: |
-          gh release create "$TAG" --notes-file "$RELEASE_NOTES_FILE"
+          gh release create "${{ steps.create-release-package.outputs.tag-name }}" --notes-file "$RELEASE_NOTES_FILE"
