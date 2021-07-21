@@ -36,8 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx standard-version@^9.3.1
-          git describe --tags --abbrev=0
-          echo ::set-output name=tag_name::$(git describe --tags --abbrev=0)
+          echo "::set-output name=tag_name::$(git describe --tags --abbrev=0)"
           git push --follow-tags
 
       - name: Create GitHub Release
