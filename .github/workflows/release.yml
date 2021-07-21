@@ -28,8 +28,7 @@ jobs:
 
       - name: Prepare GitHub Release Notes
         run: |
-          npx standard-version@^9.3.1 -i "${{ env.RELEASE_NOTES_FILE }}" --skip.commit --skip.tag --skip.bump --header ""
-          cat "${{ env.RELEASE_NOTES_FILE }}"
+          npx standard-version@^9.3.1 -i "${{ env.RELEASE_NOTES_FILE }}" --skip.commit --skip.tag --header ""
 
       - name: Create release package
         id: create-release-package
@@ -47,5 +46,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cat "${{ env.RELEASE_NOTES_FILE }}"
           gh release create "${{ steps.create-release-package.outputs.tag-name }}" --notes-file "${{ env.RELEASE_NOTES_FILE }}"
