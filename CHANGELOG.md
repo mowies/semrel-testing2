@@ -1,3 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.10.3](https://github.com/mowies/semrel-testing2/compare/v0.10.2...v0.10.3) (2021-07-21)
+
+
+### Features
+
+* test out changelog generation with test changelog ([f150936](https://github.com/mowies/semrel-testing2/commit/f150936f9ab40dde268352549811a855be4a4f90))
+
 ### [0.8.5](https://github.com/keptn/go-utils/compare/v0.8.4...v0.8.5)
 
 
