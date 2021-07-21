@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.10.1](https://github.com/mowies/semrel-testing2/compare/v0.10.0...v0.10.1) (2021-07-21)
+
+
+### Features
+
+* more debugging ([53e17e8](https://github.com/mowies/semrel-testing2/commit/53e17e87b0216132057c3f3b14c398728691e579))
+
 ## [0.10.0](https://github.com/mowies/semrel-testing2/compare/v0.9.5...v0.10.0) (2021-07-21)
 
 
