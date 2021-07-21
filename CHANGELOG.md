@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.9.4](https://github.com/mowies/semrel-testing2/compare/v0.9.3...v0.9.4) (2021-07-21)
+
+
+### Bug Fixes
+
+* use correct env vars in gh actions pipeline ([55c00fb](https://github.com/mowies/semrel-testing2/commit/55c00fbb42c07f167f86c6b06be0f30c18dd2551))
+
 ### [0.9.3](https://github.com/mowies/semrel-testing2/compare/v0.9.2...v0.9.3) (2021-07-21)
 
 
