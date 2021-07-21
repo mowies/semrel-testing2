@@ -27,10 +27,8 @@ jobs:
           git config user.email "moritz.wiesinger@dynatrace.com"
 
       - name: Prepare GitHub Release Notes
-        env:
-          RELEASE_NOTES_FILE: ${{ env.RELEASE_NOTES_FILE }}
         run: |
-          npx standard-version@^9.3.1 -i "$RELEASE_NOTES_FILE" --skip.commit --skip.tag --skip.bump --header ""
+          npx standard-version@^9.3.1 -i "${{ env.RELEASE_NOTES_FILE }}" --skip.commit --skip.tag --skip.bump --header ""
 
       - name: Create release package
         id: create-release-package
@@ -47,6 +45,5 @@ jobs:
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_NOTES_FILE: ${{ env.RELEASE_NOTES_FILE }}
         run: |
-          gh release create "${{ steps.create-release-package.outputs.tag-name }}" --notes-file "$RELEASE_NOTES_FILE"
+          gh release create "${{ steps.create-release-package.outputs.tag-name }}" --notes-file "${{ env.RELEASE_NOTES_FILE }}"
