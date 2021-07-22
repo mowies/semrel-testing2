@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.12.0](https://github.com/mowies/semrel-testing2/compare/v0.11.1...v0.12.0) (2021-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* this is a breaking change, beware
+ 
+### Features
+
+* add script to remove signoff lines from changelog and test it here ([c890b65](https://github.com/mowies/semrel-testing2/commit/c890b6502c7bdeea801480b8e60e1e9e89038093))
+* new file ([049e6ca](https://github.com/mowies/semrel-testing2/commit/049e6ca27c0874dd9f0a945dea91520f1fb5f9e8))
+
 ### [0.11.1](https://github.com/mowies/semrel-testing2/compare/v0.11.0...v0.11.1) (2021-07-21)
 
 
