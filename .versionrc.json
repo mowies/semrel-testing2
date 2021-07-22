@@ -1,6 +1,9 @@
 {
   "preMajor": true,
   "issueUrlFormat": "https://github.com/mowies/semrel-testing/issues/{{id}}",
+  "scripts": {
+    "postchangelog": "./gh-actions-scripts/post-changelog-actions.sh"
+  },
   "types": [
     {
       "type": "feat",
@@ -12,15 +15,11 @@
     },
     {
       "type": "chore",
-      "hidden": true
+      "section": "Other"
     },
     {
       "type": "docs",
       "section": "Docs"
-    },
-    {
-      "type": "example",
-      "section": "Examples"
     },
     {
       "type": "perf",
