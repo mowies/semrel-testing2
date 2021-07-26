@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.13.0](https://github.com/mowies/semrel-testing2/compare/v0.12.0...v0.13.0) (2021-07-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* **scope123:** this file makes everything fail
+ 
+### Features
+
+* **another-scope:** new file ([a719b19](https://github.com/mowies/semrel-testing2/commit/a719b1985a1c72fe06e70380082bca60111fc4e1))
+* **scope123:** another important file ([ecbad85](https://github.com/mowies/semrel-testing2/commit/ecbad85c84ffe11366e7d3365a97ecf0b15a80d2))
+* **scope123:** remove file that nobody needs ([9981754](https://github.com/mowies/semrel-testing2/commit/99817548deb33dfee14547c54a8374fd4b87fa93))
+
 ## [0.12.0](https://github.com/mowies/semrel-testing2/compare/v0.11.1...v0.12.0) (2021-07-22)
 
 
