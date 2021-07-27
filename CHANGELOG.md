@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.1-next.0](https://github.com/mowies/semrel-testing2/compare/v0.14.0...v0.14.1-next.0) (2021-07-27)
+
+
+### Features
+
+* add new pipeline for pre-releases ([fdc6cf4](https://github.com/mowies/semrel-testing2/commit/fdc6cf40a6363be2f3d633ea10c35c6394be1042))
+
 ## [0.14.0](https://github.com/mowies/semrel-testing2/compare/v0.13.0...v0.14.0) (2021-07-26)
 
 
