@@ -43,8 +43,6 @@ jobs:
 
       - name: Create pre-release package
         id: create-release-package
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "🚀 Creating pre-release package now..."
           npx standard-version@^9.3.1 --prerelease "${{ env.PRERELEASE_KEYWORD }}"
@@ -55,6 +53,6 @@ jobs:
 
       - name: Create GitHub Release
         env:
-          GITHUB_TOKEN: ${{ secrets.KEPTN_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release create "${{ steps.create-release-package.outputs.tag-name }}" --prerelease --notes-file "${{ env.RELEASE_NOTES_FILE }}"
