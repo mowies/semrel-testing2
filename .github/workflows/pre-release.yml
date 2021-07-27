@@ -39,7 +39,8 @@ jobs:
 
       - name: Enhance Release Notes with Build Metadata
         run: |
-          echo "#### Build Information\n\n" >> "${{ env.RELEASE_NOTES_FILE }}"
+          echo "#### Build Information" >> "${{ env.RELEASE_NOTES_FILE }}"
+          echo "" >> "${{ env.RELEASE_NOTES_FILE }}"
           echo "**GitHub Actions Run:** $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> "${{ env.RELEASE_NOTES_FILE }}"
 
       - name: Create pre-release package
