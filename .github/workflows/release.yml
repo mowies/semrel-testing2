@@ -9,6 +9,7 @@ defaults:
     shell: bash
 jobs:
   release:
+    name: Release
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout repo

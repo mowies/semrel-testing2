@@ -12,6 +12,7 @@ defaults:
     shell: bash
 jobs:
   pre-release:
+    name: Pre-Release
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout repo
