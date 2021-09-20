@@ -27,6 +27,19 @@ jobs:
           git config user.name "Moritz Wiesinger"
           git config user.email "moritz.wiesinger@dynatrace.com"
 
+      - name: Debugging
+        run: |
+          echo "all tags:"
+          git tag -l | grep ''
+
+          echo ""
+          echo ""
+          echo ""
+
+          echo "grepped tags:"
+          git tag -l | grep -vE '^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$'
+
+
       - name: Prepare GitHub Release Notes
         run: |
           # Delete pre-release tags to be able to generate a changelog from last 'real' release
@@ -42,7 +55,7 @@ jobs:
           path: ${{ env.RELEASE_NOTES_FILE }}
 
       - name: Temporarily disable "include administrators" branch protection
-        uses: benjefferies/branch-protection-bot@1.0.7
+        uses: benjefferies/branch-protection-bot@6d0ac2b2d9bfd39794b017f8241adb7da7f0ab98
         with:
           access_token: ${{ secrets.ADVANCED_GITHUB_TOKEN }}
           branch: ${{ github.event.repository.default_branch }}
@@ -63,7 +76,7 @@ jobs:
           git push --follow-tags
 
       - name: Enable "include administrators" branch protection
-        uses: benjefferies/branch-protection-bot@1.0.7
+        uses: benjefferies/branch-protection-bot@6d0ac2b2d9bfd39794b017f8241adb7da7f0ab98
         if: always()  # Force to always run this step to ensure "include administrators" is always turned back on
         with:
           access_token: ${{ secrets.ADVANCED_GITHUB_TOKEN }}
