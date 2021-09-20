@@ -2,6 +2,75 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.10.0](https://github.com/mowies/semrel-testing2/compare/v0.9.5...v0.10.0) (2021-09-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* this will break
+* **scope123:** this file makes everything fail
+ * add another test file (#11)
+* very important change
+
+### Features
+
+* a new file ([#7](https://github.com/mowies/semrel-testing/issues/7)) ([92691fb](https://github.com/mowies/semrel-testing2/commit/92691fba01a295c3e56a35091bb4aa9c88c98810))
+* add another test file ([#11](https://github.com/mowies/semrel-testing/issues/11)) ([6fc319d](https://github.com/mowies/semrel-testing2/commit/6fc319d3643976329642b9ec3ae7164ae9453014))
+* add branch protection bot to release automation pipeline ([#8](https://github.com/mowies/semrel-testing/issues/8)) ([db2c622](https://github.com/mowies/semrel-testing2/commit/db2c622accbc3840c1d29b9984d8867146361cae))
+* add changelog to build artifacts ([#9](https://github.com/mowies/semrel-testing/issues/9)) ([4c61d9f](https://github.com/mowies/semrel-testing2/commit/4c61d9f44a089f2b682c15d99eda23cd55afb3c6))
+* add file ([3106afa](https://github.com/mowies/semrel-testing2/commit/3106afacaef9552020efe321bc56477ff92b2a18))
+* add file contents ([03114af](https://github.com/mowies/semrel-testing2/commit/03114af5d76a7d032fbda36180060f4f3beb4dbb))
+* add new interesting file, fix CI release setup ([#11](https://github.com/mowies/semrel-testing/issues/11)) ([27265a6](https://github.com/mowies/semrel-testing2/commit/27265a6d48ceab954090f1c23f9d5c0ab1829530))
+* add new pipeline for pre-releases ([fdc6cf4](https://github.com/mowies/semrel-testing2/commit/fdc6cf40a6363be2f3d633ea10c35c6394be1042))
+* add script to remove signoff lines from changelog and test it here ([c890b65](https://github.com/mowies/semrel-testing2/commit/c890b6502c7bdeea801480b8e60e1e9e89038093))
+* **another-scope:** new file ([a719b19](https://github.com/mowies/semrel-testing2/commit/a719b1985a1c72fe06e70380082bca60111fc4e1))
+* more debugging ([53e17e8](https://github.com/mowies/semrel-testing2/commit/53e17e87b0216132057c3f3b14c398728691e579))
+* new file ([049e6ca](https://github.com/mowies/semrel-testing2/commit/049e6ca27c0874dd9f0a945dea91520f1fb5f9e8))
+* new file for testing ([#1](https://github.com/mowies/semrel-testing/issues/1)) ([20486fc](https://github.com/mowies/semrel-testing2/commit/20486fcf7737b7ecbbbc75b250a414705f9cb91a))
+* remove random file ([#10](https://github.com/mowies/semrel-testing/issues/10)) ([23605c5](https://github.com/mowies/semrel-testing2/commit/23605c55f60367393704338fd5ba3f4fb34192ba))
+* remove test file (mowies/semrel-testing[#11](https://github.com/mowies/semrel-testing/issues/11)) ([b2b505a](https://github.com/mowies/semrel-testing2/commit/b2b505a876bff37d2c943b39e9afeeef7919dfbf))
+* remove test file again ([#11](https://github.com/mowies/semrel-testing/issues/11)) ([fab2cfd](https://github.com/mowies/semrel-testing2/commit/fab2cfd58970aa130aad99c9dbb5ea551b8a85b9))
+* remove unneeded file ([acc6506](https://github.com/mowies/semrel-testing2/commit/acc6506b64111fa844dc7d90b70b09bcc98da467))
+* **scope123:** another important file ([ecbad85](https://github.com/mowies/semrel-testing2/commit/ecbad85c84ffe11366e7d3365a97ecf0b15a80d2))
+* **scope123:** remove file that nobody needs ([9981754](https://github.com/mowies/semrel-testing2/commit/99817548deb33dfee14547c54a8374fd4b87fa93))
+* some feature ([6c7db88](https://github.com/mowies/semrel-testing2/commit/6c7db88b0261446915ec2a6ce09c21860feada9f))
+* test out changelog generation with test changelog ([f150936](https://github.com/mowies/semrel-testing2/commit/f150936f9ab40dde268352549811a855be4a4f90))
+* use issue url format that references different repo that this one ([d3f2f84](https://github.com/mowies/semrel-testing2/commit/d3f2f842c32a1d2df6fd8e67d9c51688e1636f5a))
+* very important change ([7b2a285](https://github.com/mowies/semrel-testing2/commit/7b2a2855eafa8899ae2325d9fd0002806223d663))
+
+
+### Bug Fixes
+
+* fetch tags before pushing new tag ([#13](https://github.com/mowies/semrel-testing/issues/13)) ([2232882](https://github.com/mowies/semrel-testing2/commit/22328822a41f9782190272e0dceab1cb1a41ee27))
+* fix attaching of release notes to GH releases ([5e347b3](https://github.com/mowies/semrel-testing2/commit/5e347b39082b2d47ada7af273047c1d9d424da49))
+* remove unneeded file ([#12](https://github.com/mowies/semrel-testing/issues/12)) ([989f492](https://github.com/mowies/semrel-testing2/commit/989f4924904062710dd62e9c06414274c28f1945))
+* use correct issue url format ([ef986ba](https://github.com/mowies/semrel-testing2/commit/ef986ba2be65d50a7aa14d58868a7267ad832bf0))
+* use correct token ([61f537d](https://github.com/mowies/semrel-testing2/commit/61f537dc5b51bc4c64ed0744b89724217fb7265c))
+* use correct token ([37e990d](https://github.com/mowies/semrel-testing2/commit/37e990ddfe6cd85c94bc22d7bab4087c442ddecc))
+
+
+### Other
+
+* **release:** 0.10.0 ([1f93e49](https://github.com/mowies/semrel-testing2/commit/1f93e497eb5e55341a5fb824a525098ab8a573bd))
+* **release:** 0.10.1 ([2c0df8e](https://github.com/mowies/semrel-testing2/commit/2c0df8e91fca5c6180df8c042e6dc25e86477d49))
+* **release:** 0.10.2 ([24ed85c](https://github.com/mowies/semrel-testing2/commit/24ed85c133727de6b75b78a506777b22a2f2375a))
+* **release:** 0.10.3 ([bdd98a6](https://github.com/mowies/semrel-testing2/commit/bdd98a6ab282390b2768d9483e4ead8164226613))
+* **release:** 0.10.4 ([7d952ed](https://github.com/mowies/semrel-testing2/commit/7d952edd0c3cb4f3bf4c24b2b3c30eeff04be9db))
+* **release:** 0.10.5 ([bb8fe61](https://github.com/mowies/semrel-testing2/commit/bb8fe61b83eac97007ca009c771aed47a5b48afe))
+* **release:** 0.11.0 ([851aa24](https://github.com/mowies/semrel-testing2/commit/851aa24ea4983633fadfebd65ada53517677b6af))
+* **release:** 0.11.1 ([100917c](https://github.com/mowies/semrel-testing2/commit/100917c2043ed08f4c9a032fe1434ee370fd7839))
+* **release:** 0.12.0 ([fccbdd7](https://github.com/mowies/semrel-testing2/commit/fccbdd74f3e35f276668ab37e9e2029ed9880454))
+* **release:** 0.13.0 ([c92446e](https://github.com/mowies/semrel-testing2/commit/c92446ee71df7d16a0eac39bcf3075cf96fa74e4))
+* **release:** 0.14.0 ([4983be2](https://github.com/mowies/semrel-testing2/commit/4983be26a06db97ba91905ae563944fe8685360e))
+* **release:** 0.14.1 ([2e92f82](https://github.com/mowies/semrel-testing2/commit/2e92f821e76556c5482e4432de694e1f8a41101e))
+* **release:** 0.14.1-next.0 ([c1e9af2](https://github.com/mowies/semrel-testing2/commit/c1e9af2b7e747fb4a3823684e1778a05ceb159cf))
+* **release:** 0.14.1-next.1 ([7400c93](https://github.com/mowies/semrel-testing2/commit/7400c93f532d3451b949f81ab6e3515cabddf138))
+* **release:** 0.14.1-next.2 ([393ffbd](https://github.com/mowies/semrel-testing2/commit/393ffbd7521fc439d036597add9f7758ed36fa2b))
+* **release:** 0.14.2 ([bc7c4c2](https://github.com/mowies/semrel-testing2/commit/bc7c4c2b4042d1f73ca14c9a9ef82c98e5403708))
+* **release:** 0.14.3 ([461016d](https://github.com/mowies/semrel-testing2/commit/461016d63824c8c08df40cb1984eb7c2178b7861))
+* **release:** 0.14.4 ([aaec961](https://github.com/mowies/semrel-testing2/commit/aaec96178cd3aa14a4093fafb2fd455baea8edb5))
+* **release:** 0.14.5 ([b20efd1](https://github.com/mowies/semrel-testing2/commit/b20efd1c93fe470d265d053f88aa61e80a650b7f))
+
 ### [0.14.5](https://github.com/mowies/semrel-testing2/compare/v0.14.4...v0.14.5) (2021-09-20)
 
 
