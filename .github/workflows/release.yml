@@ -31,6 +31,13 @@ jobs:
         run: |
           npx standard-version@^9.3.1 -i "${{ env.RELEASE_NOTES_FILE }}" --skip.commit --skip.tag --header ""
 
+      - name: Upload release notes
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.RELEASE_NOTES_FILE }}
+          path: ${{ env.RELEASE_NOTES_FILE }}
+
       - name: Temporarily disable "include administrators" branch protection
         uses: benjefferies/branch-protection-bot@1.0.7
         with:
