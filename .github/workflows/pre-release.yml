@@ -33,6 +33,18 @@ jobs:
           git config user.name "$KEPTN_BOT_NAME"
           git config user.email "$KEPTN_BOT_EMAIL"
 
+      - name: Debugging
+        run: |
+          echo "all tags:"
+          git tag -l | grep ''
+
+          echo ""
+          echo ""
+          echo ""
+
+          echo "grepped tags:"
+          git tag -l | grep -vE '^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$'
+
       - name: Prepare GitHub Release Notes
         run: |
           npx standard-version@^9.3.1 --prerelease "${{ env.PRERELEASE_KEYWORD }}" -i "${{ env.RELEASE_NOTES_FILE }}" --skip.commit --skip.tag --header ""
