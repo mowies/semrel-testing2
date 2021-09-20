@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.6](https://github.com/mowies/semrel-testing2/compare/v0.14.5...v0.14.6) (2021-09-20)
+
+
+### Features
+
+* add new interesting file, fix CI release setup ([#11](https://github.com/mowies/semrel-testing/issues/11)) ([27265a6](https://github.com/mowies/semrel-testing2/commit/27265a6d48ceab954090f1c23f9d5c0ab1829530))
+
+
+### Bug Fixes
+
+* add debug steps, pin branch protection bot version to specific c… ([#14](https://github.com/mowies/semrel-testing/issues/14)) ([1aab2e8](https://github.com/mowies/semrel-testing2/commit/1aab2e82ffaf7e75c1cd8901d619f97a00181480))
+* fetch tags before pushing new tag ([#13](https://github.com/mowies/semrel-testing/issues/13)) ([2232882](https://github.com/mowies/semrel-testing2/commit/22328822a41f9782190272e0dceab1cb1a41ee27))
+* more debugging ([#15](https://github.com/mowies/semrel-testing/issues/15)) ([62a885d](https://github.com/mowies/semrel-testing2/commit/62a885d634a284f890cfd383d58a58077cfae6ef))
+* remove unneeded file ([#12](https://github.com/mowies/semrel-testing/issues/12)) ([989f492](https://github.com/mowies/semrel-testing2/commit/989f4924904062710dd62e9c06414274c28f1945))
+
+
+### Other
+
+* **release:** 0.10.0 ([a1a7d26](https://github.com/mowies/semrel-testing2/commit/a1a7d26c632ce3f07306f4531c7f40e7f6db516c))
+
 ## [0.10.0](https://github.com/mowies/semrel-testing2/compare/v0.9.5...v0.10.0) (2021-09-20)
 
 
