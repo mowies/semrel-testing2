@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.14.7](https://github.com/mowies/semrel-testing2/compare/v0.14.6...v0.14.7) (2021-10-11)
+
+
+### Features
+
+* new file asdf ([#20](https://github.com/mowies/semrel-testing/issues/20)) ([7e36032](https://github.com/mowies/semrel-testing2/commit/7e36032e891f536a2dafca842b320d2091ec868e))
+* remove test files ([#16](https://github.com/mowies/semrel-testing/issues/16)) ([92e1ac9](https://github.com/mowies/semrel-testing2/commit/92e1ac949fc45fa3e093bfd218d515228e121bad))
+* test commit ([#18](https://github.com/mowies/semrel-testing/issues/18)) ([e9b95e5](https://github.com/mowies/semrel-testing2/commit/e9b95e56c5a91de85ff5e7dc374dc1b608301dea))
+
+
+### Other
+
+* update pipeline ([#22](https://github.com/mowies/semrel-testing/issues/22)) ([6d1cac1](https://github.com/mowies/semrel-testing2/commit/6d1cac142009e0bc3986383e33a7295d236ed7dd))
+* update PR triggers ([#21](https://github.com/mowies/semrel-testing/issues/21)) ([2c20d36](https://github.com/mowies/semrel-testing2/commit/2c20d36002689f8984150a90e639677b226f7bfe))
+
 ### [0.14.6](https://github.com/mowies/semrel-testing2/compare/v0.14.5...v0.14.6) (2021-09-20)
 
 
