@@ -1,0 +1,67 @@
+name: Semantic PR Validation
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+  pull_request:
+    branches:
+      - "master"
+      - "release-*"
+defaults:
+  run:
+    shell: bash
+jobs:
+  validate:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Validate Pull Request
+        uses: amannn/action-semantic-pull-request@v3.4.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Configure which types are allowed.
+          # Default: https://github.com/commitizen/conventional-commit-types
+          types: |
+            feat
+            fix
+            build
+            chore
+            ci
+            docs
+            perf
+            refactor
+            revert
+            style
+            test
+          # Configure which scopes are allowed.
+          scopes: |
+            api
+            approval-service
+            bridge
+            cli
+            configuration-service
+            deps
+            deps-dev
+            distributor
+            docs
+            helm-service
+            installer
+            jmeter-service
+            lighthouse-service
+            mongodb-datastore
+            remediation-service
+            secret-service
+            shipyard-controller
+            statistics-service
+            webhook-service
+          # Configure that a scope must always be provided.
+          requireScope: false
+          # When using "Squash and merge" on a PR with only one commit, GitHub
+          # will suggest using that commit message instead of the PR title for the
+          # merge commit, and it's easy to commit this by mistake. Enable this option
+          # to also validate the commit message for one commit PRs.
+          validateSingleCommit: true
+
+
