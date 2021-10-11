@@ -1,13 +1,9 @@
 name: Semantic PR Validation
 on:
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
   pull_request:
     branches:
       - "master"
+      - "main"
       - "release-*"
 defaults:
   run:
